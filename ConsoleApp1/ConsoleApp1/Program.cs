@@ -15,18 +15,28 @@ namespace ConsoleApp1
         public static int TakeUserAge()
         {
             int age;
-            Console.WriteLine("enter the user Age");
+            Console.Write("enter the user Age : ");
             age = Convert.ToInt32(Console.ReadLine());
             return age;
+        }
+        public static string userLocation()
+        {
+            string location;
+            Console.Write("enter user Location : ");
+            location = Console.ReadLine();
+            return location;
         }
         static void Main(string[] args)
         {
             string name1;
             name1 = TakeUsername();
-            Console.WriteLine("Hello My Name is " + name1);
+           // Console.WriteLine("Hello My Name is " + name1);
             int age1;
             age1 = TakeUserAge();
-            Console.WriteLine("And My Age Is "+ age1 );
+           // Console.WriteLine("And My Age Is "+ age1 );
+            string location1;
+            location1 = userLocation();
+            Console.WriteLine(" Hello My Name is " + name1 + " And My Age Is "+ age1 + " I'm From " + location1);
         }
     }
 }
